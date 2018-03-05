@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:columnCount="2"
+    android:columnWidth="320dp"
+    android:orientation="vertical"
+    android:rowCount="2"
+    android:stretchMode="columnWidth">
+
+    <RelativeLayout
+        android:id="@+id/view_root"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/office_test" >
+
+        <LinearLayout
+            android:id="@+id/myView1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/myimage1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/green_dot"
+            android:layout_gravity="center_horizontal"
+            tools:ignore="ContentDescription"
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text1"
+                android:layout_gravity="center_horizontal"
+                android:text="Room1"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/myView2"
+            android:orientation="vertical"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/myimage2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/green_dot"
+            tools:ignore="ContentDescription"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text2"
+                android:layout_gravity="center_horizontal"
+                android:text="Room2"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/myView3"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/myimage3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/red_dot"
+            tools:ignore="ContentDescription"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text3"
+                android:layout_gravity="center_horizontal"
+                android:text="Room3"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
